@@ -37,7 +37,7 @@ namespace PathCopy
             AddKeyValuePair(commandNameKey, commandText);
 
             var commandSubKey = commandNameKey + @"\command";
-            var commandValue = executable + @" %1";
+            var commandValue = executable + @" ""%1""";
             AddKeyValuePair(commandSubKey, commandValue);
         }
 
